@@ -13,4 +13,5 @@ class KanItem(scrapy.Item):
     # name = scrapy.Field()
     book_title = scrapy.Field()
     file_urls = scrapy.Field()
-    files = scrapy.Field()
+    author = scrapy.Field()
+    description = scrapy.Field()

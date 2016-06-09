@@ -15,11 +15,16 @@ SPIDER_MODULES = ['kan.spiders']
 NEWSPIDER_MODULE = 'kan.spiders'
 
 ITEM_PIPELINES = {
-    'kan.pipelines.KanPipeline': 300,
-    #if need to download the file  enable the next line
-   # 'kan.pipelines.MyFilePipeline': 1
+#if need to create html doc  enable the next line
+   # 'kan.pipelines.KanPipeline': 300,
+
+#if need to download the file  enable the next line
+    #'kan.pipelines.MyFilePipeline': 1
+
+ # if need to wriate the dateBase  enable the next line
+    'kan.pipelines.DateBasePipeline':200,
 }
-FILES_STORE = 'D:\\mobi'
+FILES_STORE = 'F:\\mobi'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 # USER_AGENT = 'kan (+http://www.yourdomain.com)'
